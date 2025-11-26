@@ -133,19 +133,19 @@ h1,h2,h3,h4,h5,h6 {
 .menu__link {
     display: block;
     text-align: center;
-    color: #000;
+    color: white;
     font-weight: 700;
     line-height: normal;
     border-radius: .75rem;
     border: .25rem solid #000;
-    background: linear-gradient(180deg,#fdfad5 0,rgba(252,244,148,.98) 100%);
+    background: linear-gradient(180deg,#b874f0 0,#e96ece 100%);
     padding: .375rem 1.25rem;
     transition: color .2s,background-color .2s,box-shadow .2s;
     will-change: color,background-color,box-shadow
 }
 
 .menu__link._navigator-active {
-    background: linear-gradient(180deg,#ffff10 -22.89%,#ffab10 164.47%);
+    background: linear-gradient(180deg,#ff10b7 -22.89%,#b310ff 164.47%);
     box-shadow: 0 -1.0625rem 0 0 rgba(217,156,2,.23) inset
 }
 
@@ -292,7 +292,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .cn:has(.cn__button:hover) span {
-    color: #378fcf
+    color: rgb(255, 238, 250)
 }
 
 .cn__address {
@@ -1077,14 +1077,14 @@ h1,h2 {
     border: .25rem solid #000;
     padding: .375rem 1.25rem;
     border-radius: .75rem;
-    background: linear-gradient(180deg,#ffff10 -22.89%,#ffab10 164.47%);
+    background: linear-gradient(180deg,#9f41ec -22.89%,#f12fb1 164.47%);
     box-shadow: 0 -1.0625rem 0 0 rgba(217,156,2,.23) inset;
     transition: box-shadow .2s,letter-spacing .2s
 }
 
 .button span {
     width: 100%;
-    color: #421a02;
+    color: white;
     font-weight: 700;
     line-height: normal;
     display: flex;
@@ -1837,7 +1837,7 @@ h1,h2 {
     font-size: 2rem;
     border-radius: 62.5rem;
     border: .25rem solid #000;
-    background: linear-gradient(180deg,#ffe065 17.72%,#ff9735 138.6%);
+    background: linear-gradient(180deg,#ffe065 17.72%,#36291c 138.6%);
     box-shadow: 0 .25rem 0 0 #000;
     padding: .375rem;
     position: relative;
@@ -2120,7 +2120,7 @@ h1,h2 {
         border-radius: 1rem;
         border: .25rem solid #000;
         padding: .5rem;
-        background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%)
+        background: linear-gradient(180deg,#fdd4f7 21.78%,#dba3fb 100%)
     }
 
     .buy__img {
@@ -2668,7 +2668,7 @@ h1,h2 {
         flex-direction: column;
         border-radius: 1rem;
         border: .25rem solid #000;
-        background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%);
+        background: linear-gradient(180deg,#f6d4fd 21.78%,#dfa3fb 100%);
         row-gap: 1.875rem
     }
 
@@ -3253,7 +3253,7 @@ h1,h2 {
 
 @media (any-hover: hover) {
     .menu__link:hover {
-        color:#378fcf
+        color:rgb(255, 199, 249)
     }
 
     .cn__button:hover svg path {
