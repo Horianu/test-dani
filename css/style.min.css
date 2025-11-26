@@ -1869,7 +1869,7 @@ h1,h2 {
     font-size: 2rem;
     border-radius: 62.5rem;
     border: .25rem solid #000;
-    background: linear-gradient(180deg,#ffe065 17.72%,#36291c 138.6%);
+    background: linear-gradient(180deg,#ff65f2 17.72%,#36291c 138.6%);
     box-shadow: 0 .25rem 0 0 #000;
     padding: .375rem;
     position: relative;
@@ -1886,7 +1886,7 @@ h1,h2 {
     gap: .75rem;
     border-radius: 62.5rem;
     border: .25rem solid #000;
-    background: linear-gradient(180deg,#fff 0,#fffcab 140.1%);
+    background: linear-gradient(180deg,#fff 0,#ffabfb 140.1%);
     box-shadow: 0 0 .25rem 0 rgba(0,0,0,.25) inset
 }
 
@@ -1918,7 +1918,7 @@ h1,h2 {
     border-radius: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background-color: #6fee85;
+    background-color: #ee6fd9;
     border: .25rem solid #000;
     z-index: 1
 }
@@ -1945,7 +1945,7 @@ h1,h2 {
 .item-buy__text {
     border-radius: 1.125rem;
     border: .25rem solid #000;
-    background-color: #6fee85;
+    background-color: #d06fee;
     box-shadow: 0 .25rem 0 0 #000;
     padding: .375rem;
     width: calc(100% - 1.25rem);
@@ -1961,8 +1961,8 @@ h1,h2 {
     line-height: normal;
     border-radius: 1rem;
     border: .25rem solid #000;
-    background: linear-gradient(180deg,#fff 0,#fffcab 210.32%),#fdfaf2;
-    box-shadow: .125rem -7.75rem 0 0 rgba(253,160,48,.11) inset
+    background: linear-gradient(180deg,#fff 0,#ffc4f5 210.32%),#fdf2fc;
+    box-shadow: .125rem -7.75rem 0 0 rgba(246, 48, 253, 0.11) inset
 }
 
 .item-buy__text p a {
