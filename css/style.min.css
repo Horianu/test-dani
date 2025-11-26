@@ -1035,7 +1035,7 @@ h1,h2 {
     transform: translateY(-100vh)
 }
 
-.overlay {
+/*.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1048,7 +1048,7 @@ h1,h2 {
     -ms-user-select: none;
     user-select: none;
     z-index: 9999
-}
+}*/
 
 .menu-open-bg {
     pointer-events: none;
@@ -1592,13 +1592,25 @@ h1,h2 {
 
 .hero__img-title {
     position: relative;
-    width: 100%
+    width: 80%;
+    right: 0;
+}
+
+@media (max-width: 768px){
+    .hero__img-title {
+    position: relative;
+    width: 120%;
+    right: 8%;
+    top: -20%;
+    }
+
+    
 }
 
 .hero__img-title img:nth-child(1) {
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .hero__img-title img:nth-child(2) {
@@ -1614,7 +1626,7 @@ h1,h2 {
     width: 88.802083%;
     aspect-ratio: 1352/890;
     bottom: -6%;
-    right: 0;
+    right: -100px;
     z-index: 5;
     pointer-events: none
 }
@@ -1702,17 +1714,17 @@ h1,h2 {
 .buy__bg {
     pointer-events: none;
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: 100%;
     left: 50%;
     top: 0;
-    -webkit-transform: translate(-50%,0);
-    transform: translate(-50%,0)
+    -webkit-transform: translate(-57%,0);
+    transform: translate(-57%,0)
 }
 
 .buy__bg img {
     position: absolute;
-    width: 50%;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover
 }
@@ -1754,7 +1766,8 @@ h1,h2 {
 .buy__list {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    row-gap: 2.5rem
+    row-gap: 2.5rem;
+    margin-top: -2rem;
 }
 
 .buy__img {
@@ -2129,6 +2142,7 @@ h1,h2 {
         -webkit-transform:rotate(4.96deg);
         transform: rotate(4.96deg)
     }
+    
 }
 
 @media (min-width: 47.99875em) {
@@ -2143,6 +2157,7 @@ h1,h2 {
     .hero__img img:nth-child(1) {
         right: 4%
     }
+
 }
 
 @media (min-width: 61.99875em) {
@@ -2439,6 +2454,7 @@ h1,h2 {
     .hero__img {
         width:75rem
     }
+
 
     .buy {
         aspect-ratio: 1920/1161
@@ -2930,7 +2946,7 @@ h1,h2 {
     }
 
     .header__logo {
-        width: clamp(6.875rem ,5.7269104349rem + 1.8517946977vw ,7.625rem)
+        width: clamp(6.875rem ,5.7269104349rem + 1.8517946977vw ,7.65rem)
     }
 
     .menu-footer__link {
@@ -2960,7 +2976,7 @@ h1,h2 {
     }
 
     .header__logo {
-        width: clamp(5rem ,3.7499627965rem + 6.2501860174vw ,7.625rem)
+        width: clamp(6.7rem ,3.7499627965rem + 6.2501860174vw ,7.625rem);
     }
 
     .menu-footer__link {
