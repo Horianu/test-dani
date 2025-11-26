@@ -1759,11 +1759,11 @@ h1,h2 {
 
 .buy__img {
     position: absolute;
-    right: 40px;
+    right: -100px;
     z-index: 4;
     aspect-ratio: 809/1302;
     scale: 75%;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .buy__img._watcher-view img {
@@ -2619,7 +2619,7 @@ h1,h2 {
     }
 
     .hero__bottom {
-        row-gap: .9375rem
+        row-gap: 1.9375rem
     }
 
     .hero__bottom {
@@ -2786,6 +2786,7 @@ h1,h2 {
     }
 
     .buy__title {
+        margin-top: 1.5rem;
         margin-bottom: .625rem;
         width: 110%
     }
@@ -2796,7 +2797,8 @@ h1,h2 {
     }
 
     .buy__img {
-        width: 70%
+        width: 115%;
+        transform: translateY(280px);
     }
 
     .item-buy:nth-child(1) .item-buy__bg img:nth-child(1) {
