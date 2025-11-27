@@ -22,6 +22,7 @@
       width: 50% !important;
       height: auto !important;
     }
+    
 
     </style>
     <link rel="stylesheet" href="css/style.min.css?_v=20250125211808" />
@@ -292,16 +293,20 @@
       </main>
       <footer class="footer">
         <div class="footer__bg">
-          <img src="img/join/bg.png" alt="Image" />
-          <img src="img/join/leaves.png" alt="Image" />
+          <div class="coin-container">
+            <video class="coin-video" src="img/footer/coin." type="video/webm" autoplay playsinline muted loop></video>
+          </div>
+          <!-- <img src="img/join/bg.png" alt="Image" /> -->
+            <img src="img/join/leaves.png" alt="Image" />
         </div>
+        
         <section class="footer__join join">
           <div class="join__container">
             <div class="join__content">
               <div class="join__title" data-watch-threshold="0.4" data-watch-once="" data-watch="">
                 <img class="ibg" src="img/join/title.png" alt="Image" />
               </div>
-              <div class="join__about" data-watch-threshold="0.4" data-watch="" data-watch-once="">
+              <!-- <div class="join__about" data-watch-threshold="0.4" data-watch="" data-watch-once="">
                 <div class="join__about-wrp">
                   <p>
                     Dorem ipsum dolor sit amet consectetur adipiscing elit Nunc vulputate libero et
@@ -309,7 +314,7 @@
 									torquent per conubia nostra per
                   </p>
                 </div>
-              </div>
+              </div> -->
               <div class="join__actions" data-watch-threshold="0.4" data-watch="" data-watch-once="">
                 <a href="#" class="join__button button">                <span>                Coming Soon
 </span>
@@ -373,6 +378,33 @@
       </footer>
     </div>
     <script src="js/app.min.js?_v=20250125211808">
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const coinVideo = document.querySelector('.coin-video');
+        const coinContainer = document.querySelector('.footer'); // Target the WHOLE footer
+
+        if (coinVideo && coinContainer) {
+            // DESKTOP: HOVER
+            coinContainer.addEventListener('mouseenter', () => {
+                coinVideo.play().catch(e => console.log("Autoplay prevented", e));
+            });
+
+            coinContainer.addEventListener('mouseleave', () => {
+                coinVideo.pause();
+                // coinVideo.currentTime = 0; // Uncomment if you want it to reset
+            });
+
+            // MOBILE: CLICK
+            coinContainer.addEventListener('click', () => {
+                if (coinVideo.paused) {
+                    coinVideo.play();
+                } else {
+                    coinVideo.pause();
+                }
+            });
+        }
+      });
     </script>
   </body>
 </html>
